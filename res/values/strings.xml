@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NfcMifareTest</string>
+    <string name="hint_block_index_to_read">Block index to read</string>
+    <string name="option_read_all">Read all block on card</string>
+    <string name="hint_content_to_write">Content to write</string>
+    <string name="option_write_to_block">Write to specified block</string>
+    <string name="option_write_all">Batch write</string>
+    <string name="hint_block_index">Block index</string>
+    <string name="debug_off">Debug off</string>
+    <string name="toast_need_data">Choose/enter data to read/write!</string>
+    <string name="toast_not_mifare_classic">Not Mifare Classic card!</string>
+    <string name="toast_write_success">Write success!</string>
+    <string name="toast_write_fail">Write failed!</string>
+    <string name="result_failed_the_following">Write the following block failed:</string>
+    <string name="block_index_dynamic">Block %d:</string>
+    <string name="auth_failed">Auth failed!</string>
+    <string name="err_write_to_forbidden_block">Can not write to block that is the last one in partition and the 0 one in 0 partition!</string>
+    <string name="write_random_dynamic">Write to random block %d!</string>
+    <string name="err_block_index_out_of_bound">Block index must less than total blocks on card!</string>
+</resources>

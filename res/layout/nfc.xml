@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent"
+                      android:id="@+id/et_read_block_index"
+                      android:maxLines="1"
+                      android:maxLength="3"
+                      android:inputType="number"
+                      android:hint="@string/hint_block_index_to_read"
+                      android:layout_height="wrap_content"/>
+            <Button android:layout_width="32px"
+                    android:id="@+id/btn_et_read_block_index"
+                    android:layout_alignRight="@+id/et_read_block_index"
+                    android:layout_marginRight="10dp"
+                    android:onClick="clearText"
+                    android:layout_alignBaseline="@+id/et_read_block_index"
+                    android:background="@drawable/clear"
+                    android:layout_height="32px"/>
+        </RelativeLayout>
+        <RadioGroup android:layout_width="match_parent"
+                    android:id="@+id/rg_read_options"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content"
+                         android:text="ASCII"
+                         android:id="@+id/rb_charset_ascii"
+                         android:layout_weight="1"
+                         android:checked="true"
+                         android:layout_height="wrap_content"/>
+            <RadioButton android:layout_width="wrap_content"
+                         android:text="UTF-8"
+                         android:id="@+id/rb_charset_utf8"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"/>
+            <RadioButton android:layout_width="wrap_content"
+                         android:text="HEX"
+                         android:id="@+id/rb_hex"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <CheckBox android:layout_width="match_parent"
+                  android:id="@+id/cb_read_all_data"
+                  android:text="@string/option_read_all"
+                  android:gravity="center_vertical"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_marginTop="20dp"
+                  android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <EditText android:id="@+id/et_write_block_content"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:maxLines="1"
+                      android:inputType="text"
+                      android:maxLength="16"
+                      android:hint="@string/hint_content_to_write"/>
+            <Button android:layout_width="32px"
+                    android:id="@+id/btn_write_block_content"
+                    android:layout_alignRight="@+id/et_write_block_content"
+                    android:layout_marginRight="10dp"
+                    android:onClick="clearText"
+                    android:layout_alignBaseline="@+id/et_write_block_content"
+                    android:background="@drawable/clear"
+                    android:layout_height="32px"/>
+        </RelativeLayout>
+        <RadioGroup android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg_write_options"
+                    android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content"
+                         android:id="@+id/rb_write_block_index"
+                         android:text="@string/option_write_to_block"
+                         android:gravity="center_vertical"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"/>
+            <RadioButton android:layout_width="wrap_content"
+                         android:id="@+id/rb_write_all_data"
+                         android:text="@string/option_write_all"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:id="@+id/rl_write_block_index"
+                        android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/et_write_block_index"
+                      android:maxLength="3"
+                      android:inputType="number"
+                      android:maxLines="1"
+                      android:hint="@string/hint_block_index"/>
+            <Button android:layout_width="32px"
+                    android:id="@+id/btn_write_block_index"
+                    android:layout_alignRight="@+id/et_write_block_index"
+                    android:layout_marginRight="10dp"
+                    android:onClick="clearText"
+                    android:layout_alignBaseline="@+id/et_write_block_index"
+                    android:background="@drawable/clear"
+                    android:layout_height="32px"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_marginTop="20dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <CheckBox android:layout_width="match_parent"
+                  android:id="@+id/cb_debug"
+                  android:text="@string/debug_off"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

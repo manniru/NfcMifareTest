@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NfcMifareTest</string>
+    <string name="hint_block_index_to_read">需要读取的块的索引</string>
+    <string name="option_read_all">读取卡上所有的块</string>
+    <string name="hint_content_to_write">需要写入的内容</string>
+    <string name="option_write_to_block">将数据写入到指定块</string>
+    <string name="option_write_all">批量写入</string>
+    <string name="hint_block_index">块的索引</string>
+    <string name="debug_off">关闭调试</string>
+    <string name="toast_need_data">请选择或输入读写操作需要的数据！</string>
+    <string name="toast_not_mifare_classic">不是Mifare Classic卡！</string>
+    <string name="toast_write_success">写入成功！</string>
+    <string name="toast_write_fail">写入失败！</string>
+    <string name="result_failed_the_following">以下块写入失败：</string>
+    <string name="block_index_dynamic">第%d块:</string>
+    <string name="auth_failed">认证失败！</string>
+    <string name="err_write_to_forbidden_block">不能将数据写入到分区的最后一块或第0分区的第0块！</string>
+    <string name="write_random_dynamic">随机写入到第%d块！</string>
+    <string name="err_block_index_out_of_bound">块的索引必须小于卡的总块数！</string>
+</resources>
