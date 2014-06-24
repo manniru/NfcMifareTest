@@ -1,0 +1,27 @@
+# Built application files
+*.apk
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+
+# Gradle files
+.gradle/
+build/
+
+# Eclipse project files
+.metadata/
+.classpath
+.project
+
+# IntelliJ IDEA project files
+.idea/
+out/
+*.iml
